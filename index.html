@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUEXPERTOS | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos específicos del inicio */
+        .hero {
+            background: linear-gradient(135deg, #0A2F5A 0%, #1a4a7a 100%);
+            color: white;
+            padding: 4rem 0;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-text h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .ventaja {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+        }
+        
+        .ventaja .icono {
+            font-size: 3rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--azul-profundo);
+            margin: 2rem 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <h1>COMPU<span>EXPERTOS</span></h1>
+                <p>🔧 Soluciones tecnológicas con garantía</p>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipos.html">Equipos</a>
+                <a href="agendar.html">Agendar</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h2>Tu tecnología, <br>en manos expertas</h2>
+                    <p>Reparación, mantenimiento y venta de equipos reacondicionados. Servicio técnico a domicilio sin costo adicional.</p>
+                    <a href="agendar.html" class="btn">📅 Agenda tu diagnóstico →</a>
+                </div>
+                <div class="hero-img">
+                    <img src="https://picsum.photos/id/0/500/350" alt="Técnico reparando computador" style="border-radius: 20px; width:100%">
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 class="section-title">Nuestros servicios estrella</h2>
+            <div class="servicios-grid">
+                <div class="card">
+                    <img src="https://picsum.photos/id/1/400/250" alt="Reparación" class="card-img">
+                    <div class="card-content">
+                        <h3>🔧 Diagnostico express</h3>
+                        <p>Diagnóstico en 2h. Hardware, software, pantallas rotas, baterías y más.</p>
+                        <strong>Desde $70.000</strong>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/2/400/250" alt="Mantenimiento" class="card-img">
+                    <div class="card-content">
+                        <h3>🧹 Mantenimiento preventivo</h3>
+                        <p>Limpieza interna, cambio de pasta térmica, optimización de sistema.</p>
+                        <strong>Desde $100.000</strong>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/3/400/250" alt="Domicilio" class="card-img">
+                    <div class="card-content">
+                        <h3>🚚 Servicio a domicilio</h3>
+                        <p>Vamos a tu casa u oficina. Sin que te muevas, solucionamos tu equipo.</p>
+                        <strong>Cotiza sin compromiso</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ventaja">
+                <div class="icono">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                <h3>Más de 500 clientes satisfechos</h3>
+                <p>"Recibí mi laptop como nueva. Excelente servicio y puntualidad." - María G.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-col">
+                <h4>COMPUEXPERTOS</h4>
+                <p>Confianza y tecnología a tu alcance.</p>
+                <p>📍 Calle Tecnológica #123, Bogotá</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <p>Lun a Vie: 9am - 7pm</p>
+                <p>Sáb: 10am - 4pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto rápido</h4>
+                <p>📞 310 123 4567</p>
+                <p>✉️ hola@compuexpertos.co</p>
+                <p>💬 WhatsApp: 310 123 4567</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

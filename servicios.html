@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUEXPERTOS | Servicios técnicos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .servicios-lista {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .servicio-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border-left: 5px solid var(--naranja-accion);
+        }
+        .precio {
+            color: var(--naranja-accion);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+        }
+        .cta-whatsapp {
+            background: #25D366;
+            color: white;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <h1>COMPU<span>EXPERTOS</span></h1>
+                <p>🔧 Soluciones tecnológicas con garantía</p>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipos.html">Equipos</a>
+                <a href="agendar.html">Agendar</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="margin: 2rem 0 0.5rem;">📋 Nuestros servicios técnicos</h1>
+        <p>Diagnóstico preciso, reparación oportuna y mantenimiento que prolonga la vida de tus equipos.</p>
+
+        <div class="servicios-lista">
+            <div class="servicio-item">
+                <h3>🩺 Diagnóstico completo</h3>
+                <p>Revisión exhaustiva de hardware y software. Informe detallado de fallas.</p>
+                <div class="precio">Desde $100.000</div>
+                <small>(Descontable si realizas la reparación)</small>
+            </div>
+            <div class="servicio-item">
+                <h3>🔧 Reparación de hardware</h3>
+                <p>Pantallas, teclados, discos duros, puertos USB, ventiladores, baterías.</p>
+                <div class="precio">Desde $50.000</div>
+            </div>
+            <div class="servicio-item">
+                <h3>💻 Reparación de software</h3>
+                <p>Eliminación de virus, reinstalación de SO, recuperación de archivos.</p>
+                <div class="precio">Desde $80.000</div>
+            </div>
+            <div class="servicio-item">
+                <h3>🧹 Mantenimiento preventivo</h3>
+                <p>Limpieza interna, cambio de pasta térmica, ventilación, optimización.</p>
+                <div class="precio">Desde $100.000</div>
+            </div>
+            <div class="servicio-item">
+                <h3>🚚 Servicio a domicilio</h3>
+                <p>Recogemos y entregamos tu equipo sin que te muevas de casa.</p>
+                <div class="precio">Desde $15.000 (solo transporte)</div>
+            </div>
+            <div class="servicio-item">
+                <h3>📦 Plan de mantenimiento empresarial</h3>
+                <p>Mantenimiento mensual para empresas con múltiples equipos.</p>
+                <div class="precio">Cotizar por equipo</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #e8f0fe; border-radius: 20px;">
+            <h3>¿Necesitas ayuda urgente?</h3>
+            <p>Contáctanos por WhatsApp y recibe atención inmediata.</p>
+            <a href="https://wa.me/573101234567" class="cta-whatsapp">💬 Escribir a COMPUEXPERTOS</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-col">
+                <h4>COMPUEXPERTOS</h4>
+                <p>Confianza y tecnología a tu alcance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <p>Lun a Vie: 9am - 7pm | Sáb: 9am - 2pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>📞 310 123 4567</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* ===== RESET Y VARIABLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-profundo: #0A2F5A;
+    --naranja-accion: #F39C12;
+    --gris-claro: #F2F4F7;
+    --gris-texto: #2C3E50;
+    --blanco: #FFFFFF;
+    --sombra: 0 4px 12px rgba(0,0,0,0.08);
+    --borde-redondo: 12px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--gris-texto);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background: var(--azul-profundo);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.logo h1 span {
+    color: var(--naranja-accion);
+}
+
+.logo p {
+    color: #8ba3c2;
+    font-size: 0.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: var(--naranja-accion);
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    display: inline-block;
+    background: var(--naranja-accion);
+    color: var(--azul-profundo);
+    font-weight: 600;
+    padding: 0.75rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--naranja-accion);
+    color: var(--naranja-accion);
+}
+
+.btn-outline:hover {
+    background: var(--naranja-accion);
+    color: white;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    background: var(--blanco);
+    border-radius: var(--borde-redondo);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: var(--azul-profundo);
+    margin-bottom: 0.5rem;
+}
+
+/* ===== FORMULARIO ===== */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--azul-profundo);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-col h4 {
+    color: var(--naranja-accion);
+    margin-bottom: 1rem;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
