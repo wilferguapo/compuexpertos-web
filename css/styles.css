@@ -11,7 +11,7 @@
     --gris-claro: #F2F4F7;
     --gris-texto: #2C3E50;
     --blanco: #FFFFFF;
-    --sombra: 0 4px 12px rgba(0,0,0,0.08);
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
     --borde-redondo: 12px;
 }
 
@@ -187,11 +187,11 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .nav-links {
         justify-content: center;
     }
-    
+
     .footer-flex {
         flex-direction: column;
         text-align: center;

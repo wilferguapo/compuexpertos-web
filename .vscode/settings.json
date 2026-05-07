@@ -1,0 +1,20 @@
+{
+    "[rocket-mvbasic]": {
+        "editor.codeLens": false
+    },
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.js": "html",
+        "**/.rmv/config/*.json": "jsonc"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.rmv/catalog/**": true,
+        "*/_*": false
+    },
+    "editor.fontSize": 24
+}
